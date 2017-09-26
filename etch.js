@@ -1,34 +1,23 @@
-// Fill the container with 100 boxes
+// Fill the container with grid boxes
 function create_grid(rows) {
+
   for(i = 1; i <= rows * rows; i++) {
     var grid = $("<div class='grid'></div>");
-
-    $("#container").append(grid);
-
-
-    // if(i % 10 == 0) {
-    //   grid.addClass("#end");
-    // }
-
-
+    $("#container").append(grid); // add grid to the container
   }
 
-  $('.grid').width(960/rows);
+  $('.grid').width(960/rows); // set grid width and height
   $('.grid').height(960/rows);
 }
 
-// function clear_grid() {
-//   while($(".grid") != null) {
-//     $(".grid").remove();
-//   }
-// }
-
+// coloring function
 function color(element, color) {
   $(element).css('background-color', color);
 }
 
+// code-block where live functions are run
 $(document).ready(function () {
-  // $(".new_grid_button").on('click', new_grid);
+
   create_grid(10);
 
   $(".grid").mouseover( function() {
@@ -44,5 +33,4 @@ $(document).ready(function () {
       color(this, 'slateblue');
     });
   })
-  //new_grid();
 });

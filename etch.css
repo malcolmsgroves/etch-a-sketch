@@ -2,9 +2,23 @@ p {
   text-align: center
 }
 
+h2 {
+  color: #FDFEFE; // white
+}
+
+
+a:link, a:visited, a:hover {
+  color: #FDFEFE; // white
+  text-decoration: 'none';
+}
+
+a:active {
+  color: #F9E79F; // yellow
+}
+
 .new_grid_button {
-    background-color: #4CAF50; /* Green */
-    border: none;
+    background-color: #EC7063;
+    border: #943126;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -31,8 +45,4 @@ p {
   background-color: powderblue;
   outline: 2px solid #000;
   float: left;
-}
-
-.end {
-  clear: right;
 }
