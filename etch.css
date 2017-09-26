@@ -1,0 +1,38 @@
+p {
+  text-align: center
+}
+
+.new_grid_button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#container {
+	position: relative;
+	top: 30px;
+	outline:2px solid #000;
+	font-size: 0;
+	margin:auto;
+	height:960px;
+	width:960px;
+	padding: 0;
+	border: none;
+}
+
+.grid {
+  height: 96px;
+  width: 96px;
+  background-color: powderblue;
+  outline: 2px solid #000;
+  float: left;
+}
+
+.end {
+  clear: right;
+}
